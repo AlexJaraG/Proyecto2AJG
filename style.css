@@ -1,9 +1,8 @@
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .iniciales{
     font-weight: 700;
+}
+
+#areaDescripcion{
+    min-height: 40px;
+    max-height: 100px;
 }

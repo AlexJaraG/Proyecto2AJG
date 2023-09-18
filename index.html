@@ -9,10 +9,30 @@
 </head>
 <body>
     <div class="container">
-        <nav class="bg-dark px-3 py-1 mt-3">
-            <span class="text-light iniciales h2">AJ</span>
+        <nav class="bg-dark px-3 py-1 mt-3 d-flex justify-content-between align-items-center">
+            <span class="text-light iniciales fs-2">AJ</span>
             <span class="text-light">PROYECTO 2: Aplicación CRUD</span>
         </nav>
+
+        <section class="explicacion mt-4 mb-2">
+            <h2 class="text-center fw-bolder">¿Qué es un CRUD?</h2>
+            <p class="text-center mt-4">E s un proceso de software que nos permite manipular datos, utilizando la persistencia.</p>
+            <p class="text-center">A continuación, verás un ejemplo de un listado de tareas, el cual te permitirá agregar, modificar, borrar y leer pendientes que tengas.</p>
+        </section>
+
+        <section>
+            <div class="areaTareas mt-4">
+                <p>Tarea</p>
+                <input type="text" id="areaTarea" class="col-12">
+                <p class="mt-3">Descripción</p>
+                <textarea id="areaDescripcion" class="col-12"></textarea>
+                <button class="btn btn-secondary btn-sm mt-3 col-12">Agregar tarea</button>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-light  mt-2 py-1 d-flex justify-content-center">
+            <p>Ten la libertad de usarlo a tu conveniencia</p>
+        </footer>
     </div>
 
 
