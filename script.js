@@ -23,7 +23,20 @@ function crearTodoList(){
         pDimanico.textContent = todoListArray[i].todoNombre;
         labelDinamico.appendChild(pDimanico);
         liDinamico.appendChild(labelDinamico);
-
         miListaTodo.appendChild(liDinamico);
+
+        let miDiv = document.createElement("div");
+        miDiv.classList.add("settings");
+        let iconoEditar = document.createElement("i");
+        iconoEditar.classList.add("bi");
+        iconoEditar.classList.add("bi-pencil-square");
+        let iconoBorrar = document.createElement("i");
+        iconoBorrar.classList.add("bi");
+        iconoBorrar.classList.add("bi-trash");
+        miDiv.appendChild(iconoEditar);
+        miDiv.appendChild(iconoBorrar);
+        liDinamico.appendChild(miDiv);
+
+
     }
 }

@@ -11,3 +11,25 @@ footer{
     height: 60px;
     line-height: 60px;
 }
+
+.bi-trash{
+    color: red;
+    font-weight: bolder;
+}
+
+.bi-pencil-square{
+    color: green;
+    padding-right: 10px;
+}
+#miListaTodo li{
+    list-style: ;
+}
+
+#miListaTodo li:nth-child(even){
+    background: rgb(215, 215, 215);
+}
+
+#miListaTodo li:hover{
+    font-weight: bolder;
+    font-size: 17px;
+}
