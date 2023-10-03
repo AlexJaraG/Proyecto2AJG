@@ -6,7 +6,7 @@ let miListaTodo = document.getElementById('miListaTodo');
 function guardarTarea(){
     let todoObjeto = {
         todoId: todoListArray.length + 1,
-        todoNombre: areaTarea.value + " " + areaDescripcion.value
+        todoNombre: areaTarea.value + " Descrepción: " + areaDescripcion.value
     };
     todoListArray.push(todoObjeto);
     console.log(todoListArray);
@@ -14,6 +14,7 @@ function guardarTarea(){
 };
 
 function crearTodoList(){
+    document.getElementById("miListaTodo").innerHTML = "";
     for(let i = 0; i < todoListArray.length; i++){
         let liDinamico = document.createElement("li");
         liDinamico.classList.add("tarea");
