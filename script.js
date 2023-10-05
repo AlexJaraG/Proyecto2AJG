@@ -30,13 +30,28 @@ function crearTodoList(){
         let iconoEditar = document.createElement("i");
         iconoEditar.classList.add("bi");
         iconoEditar.classList.add("bi-pencil-square");
+        iconoEditar.addEventListener("click", editarTarea);
+        iconoEditar.todoId = todoListArray[i].todoId;
         let iconoBorrar = document.createElement("i");
         iconoBorrar.classList.add("bi");
         iconoBorrar.classList.add("bi-trash");
+        iconoBorrar.addEventListener("click", borrarTarea);
+        iconoBorrar.todoId = todoListArray[i].todoId;
         miDiv.appendChild(iconoEditar);
         miDiv.appendChild(iconoBorrar);
         liDinamico.appendChild(miDiv);
 
 
     }
+
 }
+
+function borrarTarea(even){
+    let index = todoListArray.findIndex(m=>m.todoId == even.target.todoId);
+    todoListArray.splice(index,1);
+    crearTodoList();
+};
+
+function editarTarea(){
+    
+};
